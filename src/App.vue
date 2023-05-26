@@ -1,18 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header-component />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/headerComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent
   }
 }
 </script>
+
 
 <style>
 #app {
@@ -23,4 +26,31 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.movie-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-gallery div {
+  width: 200px;
+  background: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: ease-in-out .2s;
+}
+
+.movie-gallery div:hover {
+  background: #252525;
+  color: white;
+  filter: drop-shadow(0 0 5px #00000080);
+}
+
+.movie-gallery img {
+  max-width: 200px;
+}
 </style>
+
