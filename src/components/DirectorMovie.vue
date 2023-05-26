@@ -32,7 +32,7 @@ export default {
       this.movies.sort((a, b) => a.crew > b.crew ? 1 : -1);
     },
     searchMovies() {
-      axios.get(`https://imdb-api.com/en/API/Top250Movies/k_9cmiuidj`)
+      axios.get(`https://imdb-api.com/en/API/Top250Movies/k_nq96obwu`)
         .then(response => {
           this.movies = response.data.items
           this.sortMovie()

@@ -4,8 +4,8 @@
             <ul>
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/search">Search</router-link></li>
-                <li><router-link to="/crew">By Director</router-link></li>
-                <li><router-link to="/year">By Crew</router-link></li>
+                <li><router-link to="/crew">By Crew</router-link></li>
+                <li><router-link to="/year">By Year</router-link></li>
             </ul>
         </nav>
     </header>
